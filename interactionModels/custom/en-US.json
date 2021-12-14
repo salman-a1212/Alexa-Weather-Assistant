@@ -1,0 +1,48 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "weather assistant",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "WeatherIntent",
+          "slots": [
+            {
+              "name": "cityName",
+              "type": "AMAZON.City"
+            }
+          ],
+          "samples": [
+            "todays weather in {cityName}",
+            " tell me {cityName} weather",
+            "what is the weather of {cityName}",
+            "what\u0027s the temparature",
+            "tell me the weather",
+            "weather update"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "5"
+}

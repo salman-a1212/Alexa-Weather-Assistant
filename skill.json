@@ -1,0 +1,78 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "This weather assistant tells you the latest weather in different cities of the world",
+          "examplePhrases": [
+            "Alexa ask weather assistant to tell me Karachi weather",
+            "Alexa open weather assistant and tell me the weather"
+          ],
+          "keywords": [
+            "weather",
+            "assistant",
+            "city",
+            "weather",
+            "current",
+            "temperature",
+            "weather",
+            "update"
+          ],
+          "name": "Weather assistant",
+          "description": "This weather assistant tells you the latest weather in different cities of the world. If no city is given by the user then the default city i.e. Karachi is told.",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "updatesDescription": "This the first version",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "sourceLocaleForLanguages": [],
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "user: open weather assistant\nAlexa: Hello! this is your Weather assistant. how may I help you today? you can ask me about weather\nuser: what is the weather of Lahore?\nAlexa:  In Lahore its smoke with 16.99 degree centigrade. you can expect high at 19.06 degrees and low at 16.99 degrees.",
+      "category": "WEATHER",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:582756306116:function:2b4ac2b1-d9ee-47ac-883d-05676ed805a5:Release_1"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:582756306116:function:2b4ac2b1-d9ee-47ac-883d-05676ed805a5:Release_1"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:582756306116:function:2b4ac2b1-d9ee-47ac-883d-05676ed805a5:Release_1"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:582756306116:function:2b4ac2b1-d9ee-47ac-883d-05676ed805a5:Release_1"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "termsOfUseUrl": "https://salman-a1212.github.io/privacy-policy/terms.html",
+          "privacyPolicyUrl": "https://salman-a1212.github.io/privacy-policy/privacy.html"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
